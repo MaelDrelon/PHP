@@ -18,8 +18,7 @@
     }
 ?>
 
-<head>
-    <link rel="stylesheet" href="CssExo1.css"> 
+<head> 
 </head>
 <body>
         <?php tableau($Tableaux); ?>
