@@ -1,18 +1,18 @@
 <?php 
-    $Tableaux1['Mael'];
-    $Tableaux2['Drelon'];
-    $Tableaux3['Mimos'];
-    function tableau($Tableaux1,$Tableaux2,$Tableaux3)
+    $Tableaux = array("Nom"=> "Drelon",
+                      "Prenom"=>"Mael",
+                      "MDP"=>"1234");
+    function tableau($Tableaux)
     {
         echo '<table>
                         <td>'
-                        .$Tableaux1['Mael'].
+                        .$Tableaux["Nom"].
                         '</td>
                         <td>'
-                        .$Tableaux2['Drelon'].
+                        .$Tableaux["Prenom"].
                         '</td>
                         <td>'
-                        .$Tableaux3['Mimos'].
+                        .$Tableaux["MDP"].
                         '</td>
               </table>';
     }
@@ -22,5 +22,5 @@
     <link rel="stylesheet" href="CssExo1.css"> 
 </head>
 <body>
-        <?php tableau($Tableaux1,$Tableaux2,$Tableaux3); ?>
+        <?php tableau($Tableaux); ?>
 </body>
