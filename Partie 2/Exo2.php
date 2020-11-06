@@ -1,25 +1,34 @@
-<?php 
-    $Tableaux = array("Nom"=> "Drelon",
-                      "Prenom"=>"Mael",
-                      "MDP"=>"1234");
-    function tableau($Tableaux)
-    {
-        echo '<table>
-                        <td>'
-                        .$Tableaux["Nom"].
-                        '</td>
-                        <td>'
-                        .$Tableaux["Prenom"].
-                        '</td>
-                        <td>'
-                        .$Tableaux["MDP"].
-                        '</td>
-              </table>';
+<?php
+
+    function Tableau($Titre1,$Titre2,$Titre3) {
+        
+            ?><table>
+                <tr>
+                <?php echo"<th>$Titre1</th>";?>
+                    <td>Mael</td>
+                    <td>Drelon</td>
+                </tr>
+                <tr>
+                <?php echo"<th>$Titre2</th>";?>
+                    <td>Milo</td>
+                    <td>Pauchet</td>
+                </tr>
+                <tr>
+                <?php echo"<th>$Titre3</th>";?>
+                    <td>Tom</td>
+                    <td>Crepin</td>
+                </tr>
+            </table><?php
     }
 ?>
 
-<head> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
 </head>
 <body>
-        <?php tableau($Tableaux); ?>
+    <div>
+        <?php Tableau("Titre","Titre","Titre") ?>
+    </div> 
 </body>
