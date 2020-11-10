@@ -1,7 +1,7 @@
 <?php
-    $password="azerty";
-    $Login="ytreza";
-    function form($Login,$password) {
+    $Password="somiM";
+    $Login="Mimos";
+    function form($Login,$Password) {
         ?>
         <form action="" method="post">
             <div>
@@ -10,7 +10,7 @@
             </div>
             <div>
                 <label for="password">Mot de passe :</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="Password" id="Password">
             </div>
             <div>
                 <button type="submit" name="Confirm">Confirmer</button>
@@ -19,8 +19,8 @@
         <?php
             if(isset($_POST['Confirm'])){
                 if($_POST['Login']==$Login){
-                    if($_POST['password']==$password){
-                        return "ok"; 
+                    if($_POST['Password']==$Password){
+                        return "Ok"; 
                     }
                 }else{
                     return "Mauvais mot de passe";
@@ -34,7 +34,7 @@
 <body>
     <div>
         <?php
-            if(form("ytreza","azerty")=="ok")
+            if(form("Mimos","somiM")=="ok")
             {
                 echo"Bienvenue";
                 ?><div><a href="">Lien secret</a></div><?php
