@@ -1,12 +1,12 @@
 <?php
-    $login="admin";
-    $password="mdp";
-    function form($login,$password) {
+    $password="mimos";
+    $Login="somim";
+    function form($Login,$password) {
         ?>
         <form action="" method="post">
             <div>
-                <label for="login">Identifiant :</label>
-                <input type="text" name="login" id="login">
+                <label for="Login">Identifiant :</label>
+                <input type="text" name="Login" id="Login">
             </div>
             <div>
                 <label for="password">Mot de passe :</label>
@@ -18,9 +18,9 @@
         </form>
         <?php
             if(isset($_POST['Confirm'])){
-                if($_POST['login']==$login){
+                if($_POST['Login']==$Login){
                     if($_POST['password']==$password){
-                        return "Ok"; 
+                        return "ok"; 
                     }
                 }else{
                     return "Mauvais mot de passe";
@@ -34,10 +34,10 @@
 <body>
     <div>
         <?php
-            if(form("admin","mdp")=="ok")
+            if(form("somim","mimos")=="ok")
             {
                 echo"Bienvenue";
-                ?><div><a href="">Lien secret</a></div><?php
+                ?><div><a href="lienS.php">Lien secret</a></div><?php
             }else{
                 echo"Mot de passe incorrect";
             }
