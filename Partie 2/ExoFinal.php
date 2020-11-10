@@ -1,16 +1,16 @@
 <?php
-    $Password="somiM";
-    $Login="Mimos";
-    function form($Login,$Password) {
+    $login="admin";
+    $password="mdp";
+    function form($login,$password) {
         ?>
         <form action="" method="post">
             <div>
-                <label for="Login">Identifiant :</label>
-                <input type="text" name="Login" id="Login">
+                <label for="login">Identifiant :</label>
+                <input type="text" name="login" id="login">
             </div>
             <div>
                 <label for="password">Mot de passe :</label>
-                <input type="password" name="Password" id="Password">
+                <input type="password" name="password" id="password">
             </div>
             <div>
                 <button type="submit" name="Confirm">Confirmer</button>
@@ -18,8 +18,8 @@
         </form>
         <?php
             if(isset($_POST['Confirm'])){
-                if($_POST['Login']==$Login){
-                    if($_POST['Password']==$Password){
+                if($_POST['login']==$login){
+                    if($_POST['password']==$password){
                         return "Ok"; 
                     }
                 }else{
@@ -34,7 +34,7 @@
 <body>
     <div>
         <?php
-            if(form("Mimos","somiM")=="ok")
+            if(form("admin","mdp")=="ok")
             {
                 echo"Bienvenue";
                 ?><div><a href="">Lien secret</a></div><?php
