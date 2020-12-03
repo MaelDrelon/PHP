@@ -26,14 +26,10 @@
                     {
                         return "ok"; 
                     }
-                    else
-                    {
-                        return "Mauvais mot de passe";
-                    }
                 }
                 else
                 {
-                    return "Mauvais identifiant";
+                    return "Mauvais mot de passe";
                 }
                 
             }
