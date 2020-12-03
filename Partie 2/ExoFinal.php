@@ -1,7 +1,8 @@
 <?php
     $password="mimos";
     $Login="somim";
-    function form($Login,$password) {
+    function form($Login,$password) 
+    {
         ?>
         <form action="" method="post">
             <div>
@@ -17,13 +18,22 @@
             </div>
         </form>
         <?php
-            if(isset($_POST['Confirm'])){
-                if($_POST['Login']==$Login){
-                    if($_POST['password']==$password){
+            if(isset($_POST['Confirm']))
+            {
+                if($_POST['Login']==$Login)
+                {
+                    if($_POST['password']==$password)
+                    {
                         return "ok"; 
                     }
-                }else{
-                    return "Mauvais mot de passe";
+                    else
+                    {
+                        return "Mauvais mot de passe";
+                    }
+                }
+                else
+                {
+                    return "Mauvais identifiant";
                 }
                 
             }
