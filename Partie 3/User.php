@@ -7,7 +7,7 @@ class User
     {
         try 
         {
-            $base = new PDO('mysql:host=localhost; dbname=MaelDrelon', 'root', 'root');
+            $base = new PDO('mysql:host=192.168.65.227; dbname=MaelDrelon', 'root', 'root');
             $DonneeBruteUser = $base->query("SELECT * from Personnage");
             $TabUserIndex = 0;
             while ($tab = $DonneeBruteUser->fetch())
