@@ -1,17 +1,21 @@
 <?php
+
+
 class Personnage
 {
     private $_pseudo;
     public $_vie;
     private $_force;
-    private $_alive;
+    private $_ID;
 
-    public function __construct($valeurvie,$laforce,$lepseudo)
+    public function __construct($id)
     {
-        $this->_pseudo = $lepseudo;
-        $this->_vie = $valeurvie;
-        $this->_force = $laforce;
-        $this->_alive = true;
+        $BDD = new PDO('mysql:host=192.168.65.227; dbname=MaelDrelonPOO; charset=utf8','mael', '');
+        $this->_pseudo;
+        $this->_vie;
+        $this->_force;
+        $this->_ID = $id;
+        $id = $BDD->query ('SELECT * FROM `Personnage` WHERE `id` = $id');
     }
 
     public function AfficherPersonnage()
@@ -29,14 +33,6 @@ class Personnage
     {
         $this->_vie = $this->_vie - $Perso->getForce();
         echo "<p>".$this->_pseudo." à encore ".$this->_vie." HP. ";
-    }
-
-    public function Alive()
-    {
-        if ($_vie = 0)
-        {
-            $_alive = false;
-        }
     }
 
     public function getNom()

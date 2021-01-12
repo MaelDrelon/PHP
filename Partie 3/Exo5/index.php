@@ -6,8 +6,8 @@
 <body>
     <?php 
         echo "<h1>You encounter a foe!</h1>";
-        $Personnage1 = new Personnage(250,25,"Mael");
-        $Personnage2 = new Personnage(200,10,"Le PHP");
+        $Personnage1 = new Personnage(2);
+        $Personnage2 = new Personnage(1);
 
     $Personnage1->AfficherPersonnage();
     $Personnage2->AfficherPersonnage();
