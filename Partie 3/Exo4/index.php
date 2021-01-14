@@ -14,23 +14,23 @@
 
     echo"<p>Lancement du combat</p>";
 
-    while ($Personnage1->_vie !=0 && $Personnage2->_vie != 0)
+    while ($Personnage1->_vie >0 && $Personnage2->_vie >0)
     {
         if(rand(0, 1))
         {
-            echo "<p>";
+            echo "<p><hr width='100%' noshade size='8'>";
             $Personnage1->Attaquer($Personnage2);
             $Personnage2->Defense($Personnage1);
-            echo "</p>";
+            echo "</p><hr width='100%' noshade size='8'>";
         }    
         else
         {
-            echo "<p>";
+            echo "<p><hr width='100%' noshade size='8'>";
             $Personnage2->Attaquer($Personnage1);
             $Personnage1->Defense($Personnage2);
-            echo "</p>";
+            echo "</p><hr width='100%' noshade size='8'>";
         }
     }
-    
+highlight_file(__FILE__)
     ?>
 </body>
