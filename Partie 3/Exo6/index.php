@@ -31,6 +31,11 @@
             echo "</p><hr width='100%' noshade size='8'>";
         }
     }
-    
+    if ($Personnage1->_User["Vie"] <= 0 || $Personnage2->_User["Vie"] <= 0)
+    {
+        $Personnage1->heal($Personnage1);
+        $Personnage2->heal($Personnage2);
+    }
+    highlight_file(__FILE__)
     ?>
 </body>

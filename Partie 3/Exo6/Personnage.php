@@ -42,8 +42,8 @@ class Personnage
     }
 
     public function heal($Perso) {
-        $Perso->_User['Vie'] = 250;
-        $this->_BDD->query("UPDATE `Personnage` SET `Vie` = 250 WHERE `id`=".$Perso->_User['id']);
+        $Perso->_User['Vie'] = 300;
+        $this->_BDD->query("UPDATE `Personnage` SET `Vie` = 300 WHERE `id`=".$Perso->_User['id']);
     }
 
 }

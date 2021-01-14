@@ -31,6 +31,6 @@
             echo "</p><hr width='100%' noshade size='8'>";
         }
     }
-    
+    highlight_file(__FILE__)
     ?>
 </body>

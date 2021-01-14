@@ -14,7 +14,8 @@
             <td style= "background-color : fuchsia"><p>+AfficheUser() : Void</p></th>
         </tr>
     </table>
-
+    
     <?php 
         $User = new WUser;
         $User->afficherUser();
+        highlight_file(__FILE__);
