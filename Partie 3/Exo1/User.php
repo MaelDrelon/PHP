@@ -10,7 +10,7 @@ class WUser
         $this->_Prenom = "Mael";
     }
 
-    public function afficherUser()
+    public function afficherUser()/*Affiche l'User'*/
     {
         echo "<p>Je suis ".$this->_Nom." ".$this->_Prenom."</p>";
         echo "<p>Je suis un User</p>";

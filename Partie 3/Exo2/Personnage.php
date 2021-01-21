@@ -9,7 +9,7 @@ Class Personnage
         $this->_Vie = 100;
     }
 
-    public function AfficherPersonnage()
+    public function AfficherPersonnage()/*Affiche les personnages*/
     {
         echo "<p>J'ai ".$this->_Vie.' de santé.';
     }

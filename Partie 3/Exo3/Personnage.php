@@ -11,7 +11,7 @@ Class Personnage
     }
 
 
-    public function AfficherPersonnage()
+    public function AfficherPersonnage()/*Affiche les personnages*/
     {
         echo "<p>Je suis ".$this->_Pseudo.', </p> ';
         echo "<p>J'ai ".$this->_Vie.' de santé.';

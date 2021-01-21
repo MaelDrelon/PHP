@@ -12,36 +12,30 @@ class Personnage
         $this->_force = $laforce;
     }
 
-    public function AfficherPersonnage()
+    public function AfficherPersonnage()/*Affiche les personnages*/
     {
         echo "<p>Je suis ".$this->_pseudo.', </p> ';
         echo "<p>J'ai ".$this->_vie.' de santé.';
     }
     
-    public function Attaquer($Perso)
+    public function Attaquer($Perso)/*Prévien une attaque*/
     {
         echo "<p>".$this->_pseudo." attaque ".$Perso->getNom();"</p>";
     }
 
-    public function Defense($Perso)
+    public function Defense($Perso)/*Calcule des dommages*/
     {
         $this->_vie = $this->_vie - $Perso->getForce();
         echo "<p>".$this->_pseudo." à encore ".$this->_vie." HP. ";
     }
 
-    public function getNom()
+    public function getNom()/*Récupére un pseudo*/
     {
         return $this->_pseudo;
     }
 
-    public function getForce()
+    public function getForce()/*Récupére le puissance d'un personnage*/
     {
         return $this->_force;
     }
-
-    public function Vainqueur()
-    {
-        echo "<p>".$this->_pseudo." à gagné le combat";
-    }
-
 }
