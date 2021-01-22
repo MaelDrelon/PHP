@@ -1,3 +1,4 @@
+<?php require("Personnage.php"); ?>
 <head>
 
 </head>
